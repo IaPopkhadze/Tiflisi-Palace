@@ -1,0 +1,446 @@
+.restaurant {
+  background-color: #f3efec;
+}
+.restaurant .restaurant_header_img_container {
+  width: 100%;
+  height: 150px;
+}
+.restaurant .restaurant_header_img_container .restaurant_header_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.restaurant .restaurant_title {
+  text-align: center;
+  color: var(--color1);
+  font-size: 3rem;
+  font-family: font1;
+}
+.restaurant .restaurant_text {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: var(--color1);
+  font-size: 1.5rem;
+  font-family: font1;
+}
+.restaurant .restaurant_text span {
+  font-weight: bold;
+}
+.restaurant .restaurant_breakfast_container {
+  display: flex;
+  gap: 0.1rem;
+  margin-top: 3rem;
+}
+.restaurant .restaurant_breakfast_container .restaurant_container {
+  position: relative;
+  flex: 1;
+  height: 500px;
+  cursor: pointer;
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .restaurant_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay .white_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.7s;
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay .white_overlay .title {
+  color: var(--color2);
+  font-size: 3rem;
+  font-family: font1;
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay .white_overlay .line {
+  opacity: 0;
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay .white_overlay .text {
+  opacity: 0;
+  font-size: 1.5rem;
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay .white_overlay .btn {
+  border: 2px solid var(--color2);
+  width: 150px;
+  height: 40px;
+  color: var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay:hover .white_overlay {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(243, 239, 236, 0.9);
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay:hover .white_overlay .line {
+  width: 90%;
+  height: 2px;
+  background-color: rgb(161, 159, 159);
+  opacity: 1;
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay:hover .white_overlay .title {
+  color: var(--color1);
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay:hover .white_overlay .text {
+  opacity: 1;
+  color: var(--color1);
+}
+.restaurant .restaurant_breakfast_container .restaurant_container .black_overlay:hover .white_overlay .btn {
+  background-color: var(--color1);
+}
+.restaurant .restaurant_breakfast_container .breakfast_container {
+  position: relative;
+  flex: 1;
+  height: 500px;
+  cursor: pointer;
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .breakfast_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay .white_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.7s;
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay .white_overlay .title {
+  color: var(--color2);
+  font-size: 3rem;
+  font-family: font1;
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay .white_overlay .line {
+  opacity: 0;
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay .white_overlay .text {
+  opacity: 0;
+  font-size: 1.5rem;
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay .white_overlay .btn {
+  border: 2px solid var(--color2);
+  width: 150px;
+  height: 40px;
+  color: var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay:hover .white_overlay {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(243, 239, 236, 0.9);
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay:hover .white_overlay .line {
+  width: 90%;
+  height: 2px;
+  background-color: rgb(161, 159, 159);
+  opacity: 1;
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay:hover .white_overlay .title {
+  color: var(--color1);
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay:hover .white_overlay .text {
+  opacity: 1;
+  color: var(--color1);
+}
+.restaurant .restaurant_breakfast_container .breakfast_container .black_overlay:hover .white_overlay .btn {
+  background-color: var(--color1);
+}
+.restaurant .tiflisiVeranda1 {
+  background-color: #f3efec;
+}
+.restaurant .tiflisiVeranda1 .title {
+  padding: 2rem 0;
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  color: var(--color1);
+  font-family: font1;
+}
+.restaurant .tiflisiVeranda1 .image_content_container {
+  display: flex;
+}
+.restaurant .tiflisiVeranda1 .image_content_container .image_container {
+  padding: 1rem;
+  flex: 1;
+}
+.restaurant .tiflisiVeranda1 .image_content_container .image_container .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.restaurant .tiflisiVeranda1 .image_content_container .content_container {
+  flex: 1;
+  padding: 0 1rem;
+}
+.restaurant .tiflisiVeranda1 .image_content_container .content_container .content_title {
+  font-size: 1.7rem;
+  font-family: font1;
+  color: var(--color1);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.restaurant .tiflisiVeranda1 .image_content_container .content_container .content_text {
+  font-size: 1.3rem;
+  color: var(--color1);
+  font-family: font1;
+}
+.restaurant .tiflisiVeranda1 .image_content_container .content_container .content_text .menu_link {
+  color: var(--color1);
+}
+.restaurant .tiflisiVeranda1 .image_content_container .content_container .content_text .menu_link:hover {
+  text-decoration: none;
+}
+.restaurant .tiflisiVeranda1 .boxes_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.restaurant .tiflisiVeranda1 .boxes_container .each_box_container {
+  width: 200px;
+}
+.restaurant .tiflisiVeranda1 .boxes_container .each_box_container .each_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  cursor: pointer;
+}
+.restaurant .tiflisiVeranda1 .button_container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.restaurant .tiflisiVeranda1 .button_container .goBack {
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  background-color: #f3efec;
+  border: 2px solid var(--color1);
+  color: var(--color1);
+  transition: 0.3s;
+}
+.restaurant .tiflisiVeranda1 .button_container .goBack:hover {
+  background-color: var(--color1);
+  color: #f3efec;
+  cursor: pointer;
+}
+.restaurant .tiflisiVeranda1 .verandaModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+.restaurant .tiflisiVeranda1 .verandaModal .modalContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.restaurant .tiflisiVeranda1 .verandaModal .modalContent .modal_img_container .modal_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.restaurant .tiflisiVeranda1 .verandaModal .arrow_container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #f3efec;
+  font-size: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant .tiflisiVeranda1 .verandaModal .arrow_container .arrow {
+  cursor: pointer;
+}
+.restaurant .tiflisiVeranda1 .verandaModal .close_btn {
+  width: 100%;
+  position: absolute;
+  top: 1.5rem;
+  left: 94%;
+  width: 100%;
+  color: #f3efec;
+  font-size: 2.5rem;
+  transition: 0.4s;
+}
+.restaurant .tiflisiVeranda1 .verandaModal .close_btn:hover {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.restaurant .tiflisiVeranda2 .title {
+  padding: 2rem 0;
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  color: var(--color1);
+  font-family: font1;
+}
+.restaurant .tiflisiVeranda2 .description {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  font-size: 1.9rem;
+  color: var(--color1);
+  font-family: font1;
+  text-decoration: underline;
+}
+.restaurant .tiflisiVeranda2 .text {
+  font-size: 1.3rem;
+  color: var(--color1);
+  font-family: font1;
+  padding: 0 2rem;
+}
+.restaurant .tiflisiVeranda2 .images_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  justify-content: center;
+}
+.restaurant .tiflisiVeranda2 .images_container .each_image_container {
+  width: 200px;
+  background-color: red;
+}
+.restaurant .tiflisiVeranda2 .images_container .each_image_container .each_image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  cursor: pointer;
+}
+.restaurant .tiflisiVeranda2 .button_container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.restaurant .tiflisiVeranda2 .button_container .goBack {
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  background-color: #f3efec;
+  border: 2px solid var(--color1);
+  color: var(--color1);
+  transition: 0.3s;
+}
+.restaurant .tiflisiVeranda2 .button_container .goBack:hover {
+  background-color: var(--color1);
+  color: #f3efec;
+  cursor: pointer;
+}
+.restaurant .tiflisiVeranda2 .verandaModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+.restaurant .tiflisiVeranda2 .verandaModal .modalContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.restaurant .tiflisiVeranda2 .verandaModal .modalContent .modal_img_container .modal_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.restaurant .tiflisiVeranda2 .verandaModal .arrow_container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #f3efec;
+  font-size: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant .tiflisiVeranda2 .verandaModal .arrow_container .arrow {
+  cursor: pointer;
+}
+.restaurant .tiflisiVeranda2 .verandaModal .close_btn {
+  width: 100%;
+  position: absolute;
+  top: 1.5rem;
+  left: 94%;
+  width: 100%;
+  color: #f3efec;
+  font-size: 2.5rem;
+  transition: 0.4s;
+}
+.restaurant .tiflisiVeranda2 .verandaModal .close_btn:hover {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .restaurant .tiflisiVeranda1 .image_content_container {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=restaurant.css.map */

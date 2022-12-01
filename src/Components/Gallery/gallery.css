@@ -1,0 +1,223 @@
+.gallery {
+  background-color: #f3efec;
+}
+.gallery .gallery_background_img_container {
+  width: 100%;
+  height: 180px;
+}
+.gallery .gallery_background_img_container .gallery_background_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.gallery .gallery_title {
+  font-family: font1;
+  color: var(--color1);
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 3rem;
+}
+.gallery .gallery_images {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.gallery .gallery_images .each_gallery_image_container {
+  cursor: pointer;
+  width: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.gallery .gallery_images .each_gallery_image_container .each_gallery_image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay .gallery_image_overlay {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  height: 20%;
+  background-color: rgba(243, 239, 236, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay .gallery_image_overlay .gallery_overlay_title {
+  font-size: 2rem;
+  color: var(--color1);
+  font-family: font1;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay .gallery_image_overlay .gallery_overlay_line {
+  width: 80%;
+  height: 2px;
+  background-color: grey;
+  display: none;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay .gallery_image_overlay .gallery_overlay_content {
+  color: var(--color1);
+  font-family: font1;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 0.3rem;
+  display: none;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay .gallery_image_overlay .gallery_overlay_btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.4rem 0.9rem;
+  border: 2px solid var(--color1);
+  cursor: pointer;
+  color: var(--color1);
+  display: none;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay .gallery_image_overlay .gallery_overlay_btn:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay:hover .gallery_image_overlay {
+  cursor: pointer;
+  height: 90%;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay:hover .gallery_image_overlay .gallery_overlay_title {
+  margin-bottom: 0;
+  line-height: 0rem;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay:hover .gallery_image_overlay .gallery_overlay_line {
+  display: block;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay:hover .gallery_image_overlay .gallery_overlay_content {
+  display: block;
+}
+.gallery .gallery_images .each_gallery_image_container .gallery_full_overlay:hover .gallery_image_overlay .gallery_overlay_btn {
+  display: block;
+}
+.gallery .galleryComponentTitle {
+  font-family: font1;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color1);
+}
+.gallery .galleryComponentText {
+  text-align: center;
+  margin: auto;
+  color: var(--color1);
+  width: 90%;
+  font-size: 1.5rem;
+  font-family: font1;
+}
+.gallery .galleryComponentImages {
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.gallery .galleryComponentImages .galleryEachImageContainer {
+  width: 260px;
+  height: 150px;
+  cursor: pointer;
+}
+.gallery .galleryComponentImages .galleryEachImageContainer .galleryEachImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.gallery .gallery_btn_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.gallery .gallery_btn_container .go_back_btn {
+  width: 200px;
+  height: 40px;
+  background-color: #f3efec;
+  border: 2px solid var(--color1);
+  color: var(--color1);
+  font-size: 1.1rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.gallery .gallery_btn_container .go_back_btn:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+.gallery .galleryModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+.gallery .galleryModal .modal_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.gallery .galleryModal .modal_container .modal_image_container {
+  height: 100vh;
+}
+.gallery .galleryModal .modal_container .modal_image_container .modal_image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.gallery .galleryModal .modal_container .modal_arrow_container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .galleryModal .modal_container .modal_arrow_container .modal_arrow {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--color2);
+  cursor: pointer;
+}
+.gallery .galleryModal .modal_container .modal_close_icon {
+  position: absolute;
+  top: 1rem;
+  right: 1.3rem;
+  font-size: 2.3rem;
+  color: var(--color2);
+  cursor: pointer;
+  transition: 0.6s;
+}
+.gallery .galleryModal .modal_container .modal_close_icon:hover {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}/*# sourceMappingURL=gallery.css.map */

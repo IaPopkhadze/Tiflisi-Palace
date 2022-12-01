@@ -1,0 +1,231 @@
+.room {
+  background-color: #f3efec;
+}
+.room .room_background_img_container {
+  width: 100%;
+  height: 180px;
+}
+.room .room_background_img_container .room_background_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.room .room_title {
+  font-family: font1;
+  color: var(--color1);
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 3rem;
+}
+.room .room_text_description {
+  font-family: font1;
+  color: var(--color1);
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.room .room_text {
+  width: 90%;
+  font-family: font1;
+  color: var(--color1);
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.room .room_images {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.room .room_images .each_room_image_container {
+  cursor: pointer;
+  width: 370px;
+  position: relative;
+  overflow: hidden;
+}
+.room .room_images .each_room_image_container .each_room_image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.room .room_images .each_room_image_container .room_full_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.room .room_images .each_room_image_container .room_full_overlay .room_image_overlay {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  height: 20%;
+  background-color: rgba(243, 239, 236, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s;
+}
+.room .room_images .each_room_image_container .room_full_overlay .room_image_overlay .room_overlay_title {
+  font-size: 2rem;
+  color: var(--color1);
+  font-family: font1;
+}
+.room .room_images .each_room_image_container .room_full_overlay .room_image_overlay .room_overlay_line {
+  width: 80%;
+  height: 2px;
+  background-color: grey;
+  display: none;
+}
+.room .room_images .each_room_image_container .room_full_overlay .room_image_overlay .room_overlay_content {
+  color: var(--color1);
+  font-family: font1;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 0.3rem;
+  display: none;
+}
+.room .room_images .each_room_image_container .room_full_overlay .room_image_overlay .room_overlay_btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.4rem 0.9rem;
+  border: 2px solid var(--color1);
+  cursor: pointer;
+  color: var(--color1);
+  display: none;
+}
+.room .room_images .each_room_image_container .room_full_overlay .room_image_overlay .room_overlay_btn:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+.room .room_images .each_room_image_container .room_full_overlay:hover .room_image_overlay {
+  cursor: pointer;
+  height: 90%;
+}
+.room .room_images .each_room_image_container .room_full_overlay:hover .room_image_overlay .room_overlay_title {
+  margin-bottom: 0;
+  line-height: 0rem;
+}
+.room .room_images .each_room_image_container .room_full_overlay:hover .room_image_overlay .room_overlay_line {
+  display: block;
+}
+.room .room_images .each_room_image_container .room_full_overlay:hover .room_image_overlay .room_overlay_content {
+  display: block;
+}
+.room .room_images .each_room_image_container .room_full_overlay:hover .room_image_overlay .room_overlay_btn {
+  display: block;
+}
+.room .roomComponent .room_component_title {
+  color: var(--color1);
+  font-size: 3rem;
+  text-align: center;
+  font-family: font1;
+  margin-bottom: 1rem;
+}
+.room .roomComponent .room__content_container {
+  display: flex;
+  padding: 2rem;
+  gap: 2.5rem;
+}
+.room .roomComponent .room__content_container .room__content_container_1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.room .roomComponent .room__content_container .room__content_container_1 .big_image_container {
+  width: 100%;
+}
+.room .roomComponent .room__content_container .room__content_container_1 .big_image_container .big_image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.room .roomComponent .room__content_container .room__content_container_1 .bunch_of_img_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+.room .roomComponent .room__content_container .room__content_container_1 .bunch_of_img_container .each_img_container {
+  cursor: pointer;
+}
+.room .roomComponent .room__content_container .room__content_container_1 .bunch_of_img_container .each_img_container .each_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.room .roomComponent .room__content_container .room__content_container_2 {
+  flex: 1;
+  color: var(--color1);
+  font-family: font1;
+}
+.room .roomComponent .room__content_container .room__content_container_2 .title {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+.room .roomComponent .room__content_container .room__content_container_2 .btn {
+  background-color: var(--color1);
+  width: 160px;
+  height: 40px;
+  border: 0;
+  font-size: 1.1rem;
+  color: var(--color2);
+  transition: 0.3s;
+}
+.room .roomComponent .room__content_container .room__content_container_2 .btn:hover {
+  box-shadow: 0 0 5px 2px var(--color1);
+  cursor: pointer;
+}
+.room .roomComponent .room__content_container .room__content_container_2 .txt {
+  font-size: 1.3rem;
+}
+.room .roomComponent .room_btn_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.room .roomComponent .room_btn_container .go_back_btn {
+  width: 200px;
+  height: 40px;
+  background-color: #f3efec;
+  border: 2px solid var(--color1);
+  color: var(--color1);
+  font-size: 1.1rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.room .roomComponent .room_btn_container .go_back_btn:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+@media screen and (max-width: 1050px) {
+  .room .roomComponent .room__content_container {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=rooms.css.map */

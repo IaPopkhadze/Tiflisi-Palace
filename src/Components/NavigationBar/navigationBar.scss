@@ -1,0 +1,138 @@
+.hamburger_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(243, 239, 236, 0.95);
+  .closingIcon {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .burger_bar {
+    width: 100%;
+    height: 100%;
+ 
+    display: flex;
+    justify-content: center;
+
+    nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+          list-style: none;
+          text-decoration: none;
+         margin-top: 1.4rem;
+         .listItem{
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: var(--color1);
+          font-family: font1;
+        font-weight: bold;
+        
+         
+         }
+         .listItem:hover{
+         
+          border-bottom: 2px solid var(--color1);
+         }
+        }
+      }
+    }
+  }
+}
+
+.navigation_bar_container {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(243, 239, 236, 0.9);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  .navigation_bar {
+    width: 100%;
+    font-family: font1;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .navigationBarLogo {
+        width: 50px;
+      }
+      li {
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.4rem;
+
+        .listItem {
+          text-decoration: none;
+          color: var(--color1);
+          padding: 0.5rem;
+        }
+      }
+    }
+    .navigation_hamburger_menu {
+      font-size: 2.1rem;
+      color: var(--color1);
+      display: none;
+      cursor: pointer;
+    }
+    .navigation_bookNow_btn {
+      display: none;
+      color: var(--color2);
+      cursor: pointer;
+      font-size: 1rem;
+      width: 120px;
+      height: 35px;
+      background-color: var(--color1);
+      outline: none;
+      border: none;
+    }
+
+    #navBarActivation {
+      border-bottom: 2px solid var(--color3);
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  .navigation_bar_container {
+    .navigation_bar {
+      ul {
+        li {
+          .listItem {
+            display: none;
+          }
+        }
+      }
+      .navigation_hamburger_menu {
+        display: block;
+      }
+      .navigation_bookNow_btn {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and(max-width:800px) {
+  .navigation_bar_container {
+    .navigation_bar {
+      justify-content: center;
+      gap: 10%;
+      .navigationBarLogo {
+        margin-right: 0rem;
+      }
+    }
+  }
+}

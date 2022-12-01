@@ -1,0 +1,161 @@
+.booking .booking_img_container {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.booking .booking_img_container .booking_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.booking .booking_hidden_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  color: rgb(84, 161, 84);
+  font-size: 2rem;
+  background: #f3efec;
+  height: 400px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: font1;
+}
+.booking .book_room_section {
+  background: #f3efec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.booking .book_room_section .booking_title {
+  color: var(--color1);
+  margin-top: 14rem;
+  font-size: 2.5rem;
+  font-family: font1;
+}
+.booking .book_room_section .book_form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.booking .book_room_section .book_form .book_form_left_side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.booking .book_room_section .book_form .book_form_left_side .form_container {
+  line-height: 0;
+}
+.booking .book_room_section .book_form .book_form_left_side .form_container p {
+  font-family: Academy, HobbyStudio Georgia;
+  font-weight: normal;
+  font-size: 14px;
+  color: #333;
+}
+.booking .book_room_section .book_form .book_form_left_side .form_container span {
+  color: rgb(126, 96, 58);
+  font-size: 15px;
+}
+.booking .book_room_section .book_form .book_form_left_side .form_container .booking_input {
+  width: 300px;
+  height: 23px;
+  border: 2px solid var(--color1);
+  outline: none;
+  color: var(--color1);
+}
+.booking .book_room_section .book_form .book_form_right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container {
+  line-height: 0;
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container p {
+  font-family: Academy, HobbyStudio Georgia;
+  font-weight: normal;
+  font-size: 14px;
+  color: #333;
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container span {
+  color: rgb(126, 96, 58);
+  font-size: 15px;
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container .booking_input {
+  width: 300px;
+  height: 23px;
+  border: 2px solid var(--color1);
+  outline: none;
+  color: var(--color1);
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container .child_amount_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container .child_amount_container .booking_child {
+  width: 40px;
+  height: 23px;
+  border: 2px solid var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color1);
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container .child_amount_container .decrease {
+  font-size: 1.7rem;
+  color: var(--color1);
+  cursor: pointer;
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container .child_amount_container .increase {
+  font-size: 1.5rem;
+  color: var(--color1);
+  cursor: pointer;
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container .children {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container .children .each_child {
+  display: flex;
+  gap: 1rem;
+}
+.booking .book_room_section .book_form .book_form_right_side .form_container .children .each_child input {
+  width: 40px;
+  height: 23px;
+  border: 2px solid var(--color1);
+  color: var(--color1);
+}
+.booking .book_room_section .book_btn {
+  margin: 2.5rem 0;
+  font-size: 1.1rem;
+  width: 100px;
+  height: 35px;
+  background-color: var(--color1);
+  color: var(--color2);
+  font-family: font1;
+  cursor: pointer;
+  border: 0;
+  transition: 0.1s;
+}
+.booking .book_room_section .book_btn:hover {
+  background-color: #7e603a;
+}
+
+@media screen and (max-width: 700px) {
+  .booking .book_room_section .book_form {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=booking.css.map */

@@ -1,0 +1,122 @@
+.specialDeal {
+  background-color: #f3efec;
+}
+.specialDeal .background_container {
+  width: 100%;
+  height: 150px;
+}
+.specialDeal .background_container .background_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.specialDeal .title {
+  margin: 0;
+  padding: 2.3rem;
+  font-family: font1;
+  color: var(--color1);
+  font-size: 3rem;
+  text-align: center;
+}
+.specialDeal .specialDealContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.specialDeal .specialDealContainer .each_container {
+  position: relative;
+}
+.specialDeal .specialDealContainer .each_container .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay .white_overlay {
+  position: absolute;
+  width: 90%;
+  height: 25%;
+  left: 5%;
+  bottom: 5%;
+  background-color: rgba(243, 239, 236, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  transition: 0.9s;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay .white_overlay .white_overlay_title {
+  color: var(--color1);
+  font-family: font1;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay .white_overlay .line {
+  width: 90%;
+  height: 2px;
+  background-color: grey;
+  margin: auto;
+  display: none;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay .white_overlay .white_overlay_text {
+  color: var(--color1);
+  font-family: font1;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay .white_overlay .read_more_btn {
+  width: 150px;
+  height: 30px;
+  margin: auto;
+  background-color: #f3efec;
+  border: none;
+  background-color: var(--color1);
+  color: var(--color2);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: none;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay:hover .white_overlay {
+  height: 90%;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay:hover .white_overlay .line {
+  display: block;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay:hover .white_overlay .white_overlay_text {
+  display: block;
+}
+.specialDeal .specialDealContainer .each_container .black_overlay:hover .white_overlay .read_more_btn {
+  display: block;
+}
+.specialDeal .component_title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color1);
+  font-family: font1;
+}
+.specialDeal .component_text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color1);
+  font-family: font1;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+}/*# sourceMappingURL=specialDeal.css.map */

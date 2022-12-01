@@ -1,0 +1,31 @@
+.services {
+  background-color: #f3efec;
+}
+.services .background {
+  width: 100%;
+  height: 200px;
+}
+.services .background .background_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.services .title {
+  margin: 0;
+  padding: 2.3rem;
+  font-family: font1;
+  color: var(--color1);
+  font-size: 3rem;
+  text-align: center;
+}
+.services .service_text {
+  text-align: center;
+  color: var(--color1);
+  font-size: 1.2rem;
+  font-family: font1;
+  margin: 0;
+  padding-bottom: 5%;
+}/*# sourceMappingURL=services.css.map */

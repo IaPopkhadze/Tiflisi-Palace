@@ -1,0 +1,171 @@
+.booking {
+  .booking_img_container {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .booking_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .booking_hidden_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    color: rgb(84, 161, 84);
+    font-size: 2rem;
+    background: #f3efec;
+    height: 400px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: font1;
+  }
+  .book_room_section {
+    background: #f3efec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .booking_title {
+      color: var(--color1);
+      margin-top: 14rem;
+      font-size: 2.5rem;
+      font-family: font1;
+    }
+    .book_form {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      .book_form_left_side {
+        display: flex;
+
+        flex-direction: column;
+        gap: 0.7rem;
+        .form_container {
+          line-height: 0;
+          p {
+            font-family: Academy, HobbyStudio Georgia;
+            font-weight: normal;
+            font-size: 14px;
+            color: #333;
+          }
+          span {
+            color: rgba(126, 96, 58, 6.5);
+            font-size: 15px;
+          }
+          .booking_input {
+            width: 300px;
+            height: 23px;
+            border: 2px solid var(--color1);
+            outline: none;
+            color: var(--color1);
+          }
+        }
+      }
+      .book_form_right_side {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        .form_container {
+          line-height: 0;
+          p {
+            font-family: Academy, HobbyStudio Georgia;
+            font-weight: normal;
+            font-size: 14px;
+            color: #333;
+          }
+          span {
+            color: rgba(126, 96, 58, 6.5);
+            font-size: 15px;
+          }
+          .booking_input {
+            width: 300px;
+            height: 23px;
+            border: 2px solid var(--color1);
+            outline: none;
+            color: var(--color1);
+          }
+          .child_amount_container {
+            display: flex;
+            align-items: center;
+
+            gap: 1rem;
+            .booking_child {
+              width: 40px;
+              height: 23px;
+              border: 2px solid var(--color1);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: var(--color1);
+            }
+            .decrease {
+              font-size: 1.7rem;
+              color: var(--color1);
+              cursor: pointer;
+            }
+            .increase {
+              font-size: 1.5rem;
+              color: var(--color1);
+              cursor: pointer;
+            }
+          }
+          .children {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            .each_child {
+              display: flex;
+              gap: 1rem;
+              input {
+                width: 40px;
+                height: 23px;
+                border: 2px solid var(--color1);
+
+                color: var(--color1);
+              }
+            }
+          }
+        }
+      }
+    }
+    .book_btn {
+      margin: 2.5rem 0;
+      font-size: 1.1rem;
+      width: 100px;
+      height: 35px;
+      background-color: var(--color1);
+      color: var(--color2);
+      font-family: font1;
+      cursor: pointer;
+      border: 0;
+      transition: 0.1s;
+    }
+    .book_btn:hover {
+      background-color: #7e603a;
+    }
+  }
+}
+
+@media screen and(max-width:700px) {
+  .booking {
+    .book_room_section {
+      .book_form {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+      }
+    }
+  }
+}
