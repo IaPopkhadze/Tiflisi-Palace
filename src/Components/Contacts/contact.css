@@ -94,4 +94,10 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contact .contact_content_container {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=contact.css.map */
